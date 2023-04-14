@@ -97,7 +97,8 @@ function collision(){
 			touchingGround = false;
 		}
 	}
-	
+	// registers if player has hit the bottom of the box
+	// and does the corresponding jump/gravity logic
 	else if (playerPos[0] >= a.x && (playerPos[0] + playerWidth) <= a.x + a.width){
 		if (playerPos[1] <= (a.y + a.height) && (playerPos[1] + playerWidth) >= a.y){
 			playerPos[1] = a.y + a.height;
